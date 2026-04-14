@@ -9,33 +9,33 @@ public class AddressBuilder {
         StringBuilder sb = new StringBuilder();
 
         //billing info
-        System.out.println("Enter your name: ");
+        System.out.print("Enter your name: ");
         String fullName = scanner.nextLine();
 
-        System.out.println("Billing Street: ");
+        System.out.print("Billing Street: ");
         String billingStreet = scanner.nextLine();
 
-        System.out.println("Billing City: ");
+        System.out.print("Billing City: ");
         String billingCity = scanner.nextLine();
 
-        System.out.println("Billing State: ");
+        System.out.print("Billing State: ");
         String billingState = scanner.nextLine();
 
-        System.out.println("Billing Zip: ");
+        System.out.print("Billing Zip: ");
         String billingZip = scanner.nextLine();
 
 
         //shipping info
-        System.out.println("Shipping Street: ");
+        System.out.print("Shipping Street: ");
         String shippingStreet = scanner.nextLine();
 
-        System.out.println("Shipping City: ");
+        System.out.print("Shipping City: ");
         String shippingCity = scanner.nextLine();
 
-        System.out.println("Shipping State: ");
+        System.out.print("Shipping State: ");
         String shippingState = scanner.nextLine();
 
-        System.out.println("Shipping Zip: ");
+        System.out.print("Shipping Zip: ");
         String shippingZip = scanner.nextLine();
 
 
