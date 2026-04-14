@@ -42,7 +42,7 @@ public class AddressBuilder {
         //string builder output
         sb.append(fullName).append("\n\n");
 
-        sb.append("Billing Address:\n");
+        /*sb.append("Billing Address:\n");
         sb.append(billingStreet).append("\n");
         sb.append(billingCity).append(", ");
         sb.append(billingState).append(" ");
@@ -52,10 +52,23 @@ public class AddressBuilder {
         sb.append(shippingStreet).append("\n");
         sb.append(shippingCity).append(", ");
         sb.append(shippingState).append(" ");
-        sb.append(shippingZip).append("\n\n");
+        sb.append(shippingZip).append("\n\n");*/
+
+        formatAddress(sb, "Billing Address:", billingStreet, billingCity, billingState, billingZip);
+        formatAddress(sb, "Shipping Address", shippingStreet, shippingCity, shippingState, shippingZip);
 
         System.out.println("\n" + sb.toString());
 
         scanner.close();
+    }
+
+    public static void formatAddress(StringBuilder sb, String title, String street, String city, String state, String zip){
+        sb.append(title).append("\n");
+        sb.append(street).append("\n");
+        sb.append(city).append(", ");
+        sb.append(state).append(" ");
+        sb.append(zip).append("\n\n");
+
+
     }
 }
