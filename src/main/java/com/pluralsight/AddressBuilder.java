@@ -40,22 +40,22 @@ public class AddressBuilder {
 
 
         //string builder output
-        sb.append(fullName);
+        sb.append(fullName).append("\n\n");
 
         sb.append("Billing Address:\n");
         sb.append(billingStreet).append("\n");
         sb.append(billingCity).append(", ");
         sb.append(billingState).append(" ");
-        sb.append(billingZip).append("\n");
+        sb.append(billingZip).append("\n\n");
 
-        sb.append("Shipping Address");
-        sb.append(shippingStreet);
-        sb.append(shippingCity);
-        sb.append(shippingState);
-        sb.append(shippingZip);
+        sb.append("Shipping Address:\n");
+        sb.append(shippingStreet).append("\n");
+        sb.append(shippingCity).append(", ");
+        sb.append(shippingState).append(" ");
+        sb.append(shippingZip).append("\n\n");
 
         System.out.println("\n" + sb.toString());
 
-
+        scanner.close();
     }
 }
